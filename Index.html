@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Bokningar">
+  <title>Bokningar</title>
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#3b6ef5">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #eef1f6;
+      --card:     #ffffff;
+      --border:   #dde2ea;
+      --text:     #1a2030;
+      --sub:      #6b7a94;
+      --accent:   #3b6ef5;
+      --r:        16px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100dvh;
+    }
+
+    .app {
+      max-width: 580px;
+      margin: 0 auto;
+      padding: 12px 12px 40px;
+    }
+
+    /* ── Top bar ── */
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: var(--bg);
+      padding-bottom: 10px;
+    }
+
+    .nav-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text);
+      font-size: 18px;
+      transition: background .12s, transform .1s;
+      -webkit-tap-highlight-color: transparent;
+      box-shadow: 0 1px 3px rgba(0,0,0,.06);
+    }
+    .btn:active { background: var(--border); transform: scale(.95); }
+
+    .date-area    { flex: 1; text-align: center; }
+    .date-label   { font-size: 17px; font-weight: 700; letter-spacing: -.2px; }
+    .today-btn {
+      display: inline-block;
+      margin-top: 3px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--accent);
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .today-btn:active { opacity: .6; }
+
+    /* ── Resource selector + view toggle row ── */
+
+    .sel-row {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .sel-wrap {
+      flex: 1;
+      min-width: 0;
+      position: relative;
+    }
+
+    .resource-select {
+      width: 100%;
+      height: 44px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0 40px 0 14px;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: inherit;
+      color: var(--text);
+      appearance: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0,0,0,.06);
+    }
+
+    .sel-icon {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: var(--sub);
+    }
+
+    /* ── Day / Week toggle ── */
+
+    .view-toggle {
+      display: flex;
+      background: var(--border);
+      border-radius: 10px;
+      padding: 2px;
+      gap: 2px;
+      flex-shrink: 0;
+    }
+
+    .view-btn {
+      width: 46px;
+      height: 40px;
+      border: none;
+      background: transparent;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: inherit;
+      color: var(--sub);
+      cursor: pointer;
+      transition: background .15s, color .15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .view-btn.active {
+      background: var(--card);
+      color: var(--text);
+      box-shadow: 0 1px 3px rgba(0,0,0,.08);
+    }
+    .view-btn:active { opacity: .7; }
+
+    /* ── Booking cards ── */
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .booking {
+      display: flex;
+      align-items: stretch;
+      border-radius: var(--r);
+      overflow: hidden;
+    }
+
+    .booking-body {
+      flex: 1;
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .booking-time   { font-size: 12px; font-weight: 600; color: rgba(255,255,255,.75); margin-bottom: 4px; }
+    .booking-name   { font-size: 15px; font-weight: 700; color: #fff; line-height: 1.3; }
+    .booking-detail { font-size: 13px; color: rgba(255,255,255,.72); margin-top: 3px; line-height: 1.3; }
+
+    /* ── Week view day sections ── */
+
+    .day-section { margin-bottom: 4px; }
+
+    .day-section-hdr {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--sub);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      padding: 20px 2px 8px;
+    }
+    .day-section-hdr.today { color: var(--accent); }
+
+    .today-pill {
+      background: var(--accent);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 10px;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    /* ── State messages ── */
+
+    .msg {
+      padding: 36px 20px;
+      text-align: center;
+      color: var(--sub);
+      font-size: 15px;
+      font-weight: 500;
+      background: var(--card);
+      border-radius: var(--r);
+      box-shadow: 0 2px 6px rgba(0,0,0,.06);
+    }
+    .msg.err   { color: #c0392b; }
+    .msg.small { padding: 12px 16px; font-size: 13px; margin-bottom: 0; }
+
+    /* ── Shimmer skeleton ── */
+
+    .shimmer {
+      height: 76px;
+      border-radius: var(--r);
+      background: linear-gradient(90deg,#e2e8f0 25%,#f1f5f9 50%,#e2e8f0 75%);
+      background-size: 200% 100%;
+      animation: sh 1.2s ease-in-out infinite;
+    }
+    @keyframes sh {
+      0%   { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    /* ── Footer ── */
+
+    .footer {
+      text-align: center;
+      font-size: 11px;
+      color: var(--sub);
+      opacity: .6;
+      padding: 20px 0 8px;
+    }
+
+    @media (max-width: 380px) {
+      .date-label   { font-size: 15px; }
+      .booking-name { font-size: 14px; }
+      .view-btn     { width: 40px; font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+<div class="app">
+
+  <div class="topbar">
+    <div class="nav-row">
+      <button class="btn" type="button" onclick="moveDay(-1)" aria-label="Föregående">&#8592;</button>
+      <div class="date-area">
+        <div class="date-label" id="dateLabel">…</div>
+        <button class="today-btn" type="button" onclick="goToday()">Idag</button>
+      </div>
+      <button class="btn" type="button" onclick="moveDay(1)" aria-label="Nästa">&#8594;</button>
+    </div>
+    <div class="sel-row">
+      <div class="sel-wrap">
+        <select class="resource-select" id="resSel" onchange="onResChange(this.value)">
+        </select>
+        <svg class="sel-icon" width="16" height="16" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2.5"
+             stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </div>
+      <div class="view-toggle" role="group" aria-label="Vy">
+        <button class="view-btn active" id="btnDay"  onclick="setView('day')">Dag</button>
+        <button class="view-btn"        id="btnWeek" onclick="setView('week')">Vecka</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="content"></div>
+  <div class="footer" id="footer"></div>
+
+</div>
+
+<script>
+const RESOURCES = [
+  { key: 'viahallen', name: 'Via' },
+  { key: 'svanis',    name: 'Svanis' },
+  { key: 'tallbacka', name: 'Tallbacka' },
+  { key: 'kyrkis',    name: 'Kyrkis' }
+];
+
+const WDAYS_S = ['Sön','Mån','Tis','Ons','Tor','Fre','Lör'];
+const WDAYS_L = ['Söndag','Måndag','Tisdag','Onsdag','Torsdag','Fredag','Lördag'];
+const MONTHS  = ['januari','februari','mars','april','maj','juni',
+                 'juli','augusti','september','oktober','november','december'];
+
+let bookingData = null;
+let currentDate = stockholmToday();
+let currentRes  = loadSavedResource();
+let currentView = 'day';
+
+function loadSavedResource() {
+  try {
+    const saved = localStorage.getItem('ngf_resource');
+    if (saved && RESOURCES.some(r => r.key === saved)) return saved;
+  } catch (e) {}
+  return RESOURCES[0].key;
+}
+function saveResource(key) {
+  try { localStorage.setItem('ngf_resource', key); } catch (e) {}
+}
+
+function stockholmToday() {
+  return new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Stockholm' }).format(new Date());
+}
+function parseDate(ds) { return new Date(ds + 'T12:00:00Z'); }
+function shiftDate(ds, n) {
+  const d = parseDate(ds);
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+function getMondayOf(ds) {
+  const d = parseDate(ds), day = d.getUTCDay();
+  d.setUTCDate(d.getUTCDate() + (day === 0 ? -6 : 1 - day));
+  return d.toISOString().slice(0, 10);
+}
+function weekDates(ds) {
+  const mon = getMondayOf(ds);
+  return Array.from({ length: 7 }, (_, i) => shiftDate(mon, i));
+}
+function fmtShort(ds) {
+  const d = parseDate(ds);
+  return `${WDAYS_S[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]}`;
+}
+function fmtLong(ds) {
+  const d = parseDate(ds);
+  return `${WDAYS_L[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]}`;
+}
+function fmtWeekRange(dates) {
+  const a = parseDate(dates[0]), b = parseDate(dates[6]);
+  if (a.getUTCMonth() === b.getUTCMonth())
+    return `${a.getUTCDate()}–${b.getUTCDate()} ${MONTHS[a.getUTCMonth()]}`;
+  return `${a.getUTCDate()} ${MONTHS[a.getUTCMonth()]}–${b.getUTCDate()} ${MONTHS[b.getUTCMonth()]}`;
+}
+
+function esc(s) {
+  return String(s || '').replace(/[&<>"']/g, c =>
+    ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' })[c]);
+}
+function evBg(description) {
+  return (description || '').includes('Gymnastikf\u00f6rening')
+    ? 'linear-gradient(135deg,#2455e0,#1c3db5)'
+    : 'linear-gradient(135deg,#8896a8,#6b7a94)';
+}
+function shimmerHtml() {
+  return '<div class="shimmer"></div><div class="shimmer" style="margin-top:8px;opacity:.5"></div>';
+}
+
+function cardsHtml(events, error, compact) {
+  const cls = compact ? ' small' : '';
+  if (error) return `<div class="msg err${cls}">${esc(error)}</div>`;
+  if (!events || !events.length)
+    return `<div class="msg${cls}">Inga bokningar${compact ? '.' : ' för denna dag.'}</div>`;
+  let html = '<div class="list">';
+  for (const ev of events) {
+    const lines = esc(ev.description || '').split('\n');
+    const name  = lines[0] || 'Bokat';
+    const rest  = lines.slice(1).filter(x => x.trim()).join('<br>');
+    html += `<div class="booking" style="background:${evBg(ev.description)};box-shadow:0 2px 8px rgba(0,0,0,.12)">
+      <div class="booking-body">
+        <div class="booking-time">${esc(ev.start)}–${esc(ev.end)}</div>
+        <div class="booking-name">${name}</div>
+        ${rest ? `<div class="booking-detail">${rest}</div>` : ''}
+      </div></div>`;
+  }
+  return html + '</div>';
+}
+
+function render() {
+  const labelEl   = document.getElementById('dateLabel');
+  const contentEl = document.getElementById('content');
+
+  if (currentView === 'day') {
+    labelEl.textContent = fmtShort(currentDate);
+    if (!bookingData) { contentEl.innerHTML = shimmerHtml(); return; }
+    const dayData = bookingData.dates[currentDate];
+    if (!dayData) {
+      contentEl.innerHTML = '<div class="msg">Ingen data för detta datum.<br><small>Data täcker aktuell vecka + 2 veckor framåt.</small></div>';
+      return;
+    }
+    const rd = dayData[currentRes] || { events: [], error: '' };
+    contentEl.innerHTML = cardsHtml(rd.events, rd.error, false);
+
+  } else {
+    const dates = weekDates(currentDate);
+    labelEl.textContent = fmtWeekRange(dates);
+    if (!bookingData) { contentEl.innerHTML = shimmerHtml(); return; }
+    const today = stockholmToday();
+    let html = '';
+    for (const date of dates) {
+      const isToday = date === today;
+      html += `<div class="day-section">
+        <div class="day-section-hdr${isToday ? ' today' : ''}">
+          ${fmtLong(date)}${isToday ? ' <span class="today-pill">Idag</span>' : ''}
+        </div>`;
+      const dayData = bookingData.dates[date];
+      if (!dayData) {
+        html += '<div class="msg small">Ingen data tillgänglig.</div>';
+      } else {
+        const rd = dayData[currentRes] || { events: [], error: '' };
+        html += cardsHtml(rd.events, rd.error, true);
+      }
+      html += '</div>';
+    }
+    contentEl.innerHTML = html;
+  }
+  renderFooter();
+}
+
+function renderFooter() {
+  if (!bookingData) return;
+  const d    = new Date(bookingData.generated);
+  const time = d.toLocaleTimeString('sv-SE', { timeZone: 'Europe/Stockholm', hour: '2-digit', minute: '2-digit' });
+  const date = d.toLocaleDateString('sv-SE', { timeZone: 'Europe/Stockholm', day: 'numeric', month: 'short' });
+  document.getElementById('footer').textContent = `Uppdaterad ${date} kl. ${time}`;
+}
+
+function moveDay(delta) {
+  currentDate = shiftDate(currentDate, currentView === 'week' ? delta * 7 : delta);
+  render();
+}
+function goToday()  { currentDate = stockholmToday(); render(); }
+function setView(v) {
+  currentView = v;
+  document.getElementById('btnDay').classList.toggle('active',  v === 'day');
+  document.getElementById('btnWeek').classList.toggle('active', v === 'week');
+  render();
+}
+function onResChange(key) { currentRes = key; saveResource(key); render(); }
+
+(async function init() {
+  const sel = document.getElementById('resSel');
+  sel.innerHTML = RESOURCES
+    .map(r => `<option value="${r.key}"${r.key === currentRes ? ' selected' : ''}>${r.name}</option>`)
+    .join('');
+  document.getElementById('dateLabel').textContent = fmtShort(currentDate);
+  document.getElementById('content').innerHTML = shimmerHtml();
+  try {
+    const resp = await fetch(`./data/bookings.json?t=${Date.now()}`);
+    if (resp.status === 404) throw new Error('404 — data/bookings.json not yet generated. Run the GitHub Action first.');
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    bookingData = await resp.json();
+    render();
+  } catch (err) {
+    console.error('Failed to load bookings:', err);
+    document.getElementById('content').innerHTML =
+      `<div class="msg err">Kunde inte ladda bokningar.<br><small>${esc(err.message)}</small></div>`;
+  }
+})();
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js')
+      .catch(err => console.warn('SW registration failed:', err));
+  });
+}
+</script>
+</body>
+</html>
