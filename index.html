@@ -190,32 +190,73 @@
     .booking-name   { font-size: 15px; font-weight: 700; color: #fff; line-height: 1.3; }
     .booking-detail { font-size: 13px; color: rgba(255,255,255,.72); margin-top: 3px; line-height: 1.3; }
 
-    /* ── Week view day sections ── */
+    /* ── Week grid (side-by-side columns) ── */
 
-    .day-section { margin-bottom: 4px; }
-
-    .day-section-hdr {
+    .week-grid {
       display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 12px;
+      gap: 6px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 8px;
+      scrollbar-width: none;
+    }
+    .week-grid::-webkit-scrollbar { display: none; }
+
+    .week-col {
+      flex: 0 0 110px;
+      scroll-snap-align: start;
+    }
+
+    .week-col-hdr {
+      text-align: center;
+      padding: 7px 4px 9px;
+      margin-bottom: 6px;
+      border-radius: 12px;
+    }
+    .week-col-hdr.today { background: rgba(59,110,245,.12); }
+
+    .week-day-abbr {
+      font-size: 10px;
       font-weight: 700;
       color: var(--sub);
       text-transform: uppercase;
-      letter-spacing: .5px;
-      padding: 20px 2px 8px;
+      letter-spacing: .6px;
     }
-    .day-section-hdr.today { color: var(--accent); }
+    .week-col-hdr.today .week-day-abbr { color: var(--accent); }
 
-    .today-pill {
-      background: var(--accent);
-      color: #fff;
-      font-size: 10px;
+    .week-day-num {
+      font-size: 22px;
       font-weight: 700;
-      padding: 2px 7px;
+      color: var(--sub);
+      line-height: 1.1;
+    }
+    .week-col-hdr.today .week-day-num { color: var(--accent); }
+
+    .week-card {
       border-radius: 10px;
-      letter-spacing: 0;
-      text-transform: none;
+      padding: 6px 8px;
+      margin-bottom: 5px;
+    }
+    .week-card-time {
+      font-size: 10px;
+      font-weight: 600;
+      color: rgba(255,255,255,.75);
+      margin-bottom: 2px;
+    }
+    .week-card-name {
+      font-size: 11px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.3;
+    }
+    .week-empty {
+      font-size: 11px;
+      color: var(--sub);
+      text-align: center;
+      padding: 10px 4px;
+      background: var(--card);
+      border-radius: 10px;
     }
 
     /* ── State messages ── */
@@ -268,6 +309,7 @@
 <div class="app">
 
   <div class="topbar">
+    <!-- Date navigation row -->
     <div class="nav-row">
       <button class="btn" type="button" onclick="moveDay(-1)" aria-label="Föregående">&#8592;</button>
       <div class="date-area">
@@ -276,9 +318,12 @@
       </div>
       <button class="btn" type="button" onclick="moveDay(1)" aria-label="Nästa">&#8594;</button>
     </div>
+
+    <!-- Resource selector + Day/Week toggle -->
     <div class="sel-row">
       <div class="sel-wrap">
         <select class="resource-select" id="resSel" onchange="onResChange(this.value)">
+          <!-- populated by JS -->
         </select>
         <svg class="sel-icon" width="16" height="16" viewBox="0 0 24 24"
              fill="none" stroke="currentColor" stroke-width="2.5"
@@ -291,14 +336,19 @@
         <button class="view-btn"        id="btnWeek" onclick="setView('week')">Vecka</button>
       </div>
     </div>
+  </div><!-- /topbar -->
+
+  <div id="content">
+    <!-- filled by render() -->
   </div>
 
-  <div id="content"></div>
   <div class="footer" id="footer"></div>
 
-</div>
+</div><!-- /app -->
 
 <script>
+/* ── Constants ────────────────────────────────────────── */
+
 const RESOURCES = [
   { key: 'viahallen', name: 'Via' },
   { key: 'svanis',    name: 'Svanis' },
@@ -311,95 +361,138 @@ const WDAYS_L = ['Söndag','Måndag','Tisdag','Onsdag','Torsdag','Fredag','Lörd
 const MONTHS  = ['januari','februari','mars','april','maj','juni',
                  'juli','augusti','september','oktober','november','december'];
 
-let bookingData = null;
+/* ── State ────────────────────────────────────────────── */
+
+let bookingData = null;   // loaded from data/bookings.json
 let currentDate = stockholmToday();
 let currentRes  = loadSavedResource();
-let currentView = 'day';
+let currentView = 'day';  // 'day' | 'week'
+
+/* ── Resource persistence ─────────────────────────────── */
 
 function loadSavedResource() {
   try {
     const saved = localStorage.getItem('ngf_resource');
     if (saved && RESOURCES.some(r => r.key === saved)) return saved;
-  } catch (e) {}
+  } catch (e) { /* localStorage blocked (e.g. private browsing) — fall through */ }
   return RESOURCES[0].key;
 }
+
 function saveResource(key) {
   try { localStorage.setItem('ngf_resource', key); } catch (e) {}
 }
 
+/* ── Date utilities ───────────────────────────────────── */
+
 function stockholmToday() {
+  // Returns YYYY-MM-DD in the Stockholm timezone regardless of where the viewer is.
   return new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Stockholm' }).format(new Date());
 }
-function parseDate(ds) { return new Date(ds + 'T12:00:00Z'); }
+
+function parseDate(ds) {
+  // Parse YYYY-MM-DD as UTC noon to keep weekday/date stable across timezones.
+  return new Date(ds + 'T12:00:00Z');
+}
+
 function shiftDate(ds, n) {
   const d = parseDate(ds);
   d.setUTCDate(d.getUTCDate() + n);
   return d.toISOString().slice(0, 10);
 }
+
 function getMondayOf(ds) {
-  const d = parseDate(ds), day = d.getUTCDay();
+  const d   = parseDate(ds);
+  const day = d.getUTCDay();  // 0 = Sunday
   d.setUTCDate(d.getUTCDate() + (day === 0 ? -6 : 1 - day));
   return d.toISOString().slice(0, 10);
 }
+
 function weekDates(ds) {
   const mon = getMondayOf(ds);
   return Array.from({ length: 7 }, (_, i) => shiftDate(mon, i));
 }
+
 function fmtShort(ds) {
   const d = parseDate(ds);
   return `${WDAYS_S[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]}`;
 }
+
 function fmtLong(ds) {
   const d = parseDate(ds);
   return `${WDAYS_L[d.getUTCDay()]} ${d.getUTCDate()} ${MONTHS[d.getUTCMonth()]}`;
 }
+
 function fmtWeekRange(dates) {
-  const a = parseDate(dates[0]), b = parseDate(dates[6]);
-  if (a.getUTCMonth() === b.getUTCMonth())
+  const a = parseDate(dates[0]);
+  const b = parseDate(dates[6]);
+  if (a.getUTCMonth() === b.getUTCMonth()) {
     return `${a.getUTCDate()}–${b.getUTCDate()} ${MONTHS[a.getUTCMonth()]}`;
+  }
   return `${a.getUTCDate()} ${MONTHS[a.getUTCMonth()]}–${b.getUTCDate()} ${MONTHS[b.getUTCMonth()]}`;
 }
 
+/* ── HTML helpers ─────────────────────────────────────── */
+
 function esc(s) {
   return String(s || '').replace(/[&<>"']/g, c =>
-    ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' })[c]);
-}
-function evBg(description) {
-  return (description || '').includes('Gymnastikf\u00f6rening')
-    ? 'linear-gradient(135deg,#2455e0,#1c3db5)'
-    : 'linear-gradient(135deg,#8896a8,#6b7a94)';
-}
-function shimmerHtml() {
-  return '<div class="shimmer"></div><div class="shimmer" style="margin-top:8px;opacity:.5"></div>';
+    ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' })[c]);
 }
 
+/**
+ * Blue gradient = NGF (Nynäshamns Gymnastikförening).
+ * Gray gradient = any other organisation.
+ */
+function evBg(description) {
+  return (description || '').includes('Gymnastikf\u00f6rening')
+    ? 'linear-gradient(135deg,#2455e0,#1c3db5)'   /* NGF blue  */
+    : 'linear-gradient(135deg,#8896a8,#6b7a94)';  /* Others: gray */
+}
+
+function shimmerHtml() {
+  return '<div class="shimmer"></div>'
+       + '<div class="shimmer" style="margin-top:8px;opacity:.5"></div>';
+}
+
+/**
+ * Renders booking cards for one day.
+ * @param {Array}   events
+ * @param {string}  error
+ * @param {boolean} compact  true inside the week view (shorter "no bookings" text, smaller padding)
+ */
 function cardsHtml(events, error, compact) {
   const cls = compact ? ' small' : '';
-  if (error) return `<div class="msg err${cls}">${esc(error)}</div>`;
-  if (!events || !events.length)
-    return `<div class="msg${cls}">Inga bokningar${compact ? '.' : ' för denna dag.'}</div>`;
+  if (error)                   return `<div class="msg err${cls}">${esc(error)}</div>`;
+  if (!events || !events.length) return `<div class="msg${cls}">Inga bokningar${compact ? '.' : ' för denna dag.'}</div>`;
+
   let html = '<div class="list">';
   for (const ev of events) {
     const lines = esc(ev.description || '').split('\n');
     const name  = lines[0] || 'Bokat';
     const rest  = lines.slice(1).filter(x => x.trim()).join('<br>');
-    html += `<div class="booking" style="background:${evBg(ev.description)};box-shadow:0 2px 8px rgba(0,0,0,.12)">
-      <div class="booking-body">
-        <div class="booking-time">${esc(ev.start)}–${esc(ev.end)}</div>
-        <div class="booking-name">${name}</div>
-        ${rest ? `<div class="booking-detail">${rest}</div>` : ''}
-      </div></div>`;
+    html +=
+      `<div class="booking" style="background:${evBg(ev.description)};box-shadow:0 2px 8px rgba(0,0,0,.12)">
+        <div class="booking-body">
+          <div class="booking-time">${esc(ev.start)}–${esc(ev.end)}</div>
+          <div class="booking-name">${name}</div>
+          ${rest ? `<div class="booking-detail">${rest}</div>` : ''}
+        </div>
+      </div>`;
   }
   return html + '</div>';
 }
 
+/* ── Rendering ────────────────────────────────────────── */
+
 function render() {
-  const labelEl   = document.getElementById('dateLabel');
+  const labelEl  = document.getElementById('dateLabel');
   const contentEl = document.getElementById('content');
 
+  /* ── Day view ── */
   if (currentView === 'day') {
     labelEl.textContent = fmtShort(currentDate);
+
     if (!bookingData) { contentEl.innerHTML = shimmerHtml(); return; }
+
     const dayData = bookingData.dates[currentDate];
     if (!dayData) {
       contentEl.innerHTML = '<div class="msg">Ingen data för detta datum.<br><small>Data täcker aktuell vecka + 2 veckor framåt.</small></div>';
@@ -408,29 +501,53 @@ function render() {
     const rd = dayData[currentRes] || { events: [], error: '' };
     contentEl.innerHTML = cardsHtml(rd.events, rd.error, false);
 
+  /* ── Week view ── */
   } else {
     const dates = weekDates(currentDate);
     labelEl.textContent = fmtWeekRange(dates);
+
     if (!bookingData) { contentEl.innerHTML = shimmerHtml(); return; }
+
     const today = stockholmToday();
-    let html = '';
+    let html = '<div class="week-grid">';
+
     for (const date of dates) {
       const isToday = date === today;
-      html += `<div class="day-section">
-        <div class="day-section-hdr${isToday ? ' today' : ''}">
-          ${fmtLong(date)}${isToday ? ' <span class="today-pill">Idag</span>' : ''}
+      const d       = parseDate(date);
+      const abbr    = WDAYS_S[d.getUTCDay()];
+      const num     = d.getUTCDate();
+
+      html += `<div class="week-col">
+        <div class="week-col-hdr${isToday ? ' today' : ''}">
+          <div class="week-day-abbr">${abbr}${isToday ? ' ●' : ''}</div>
+          <div class="week-day-num">${num}</div>
         </div>`;
+
       const dayData = bookingData.dates[date];
       if (!dayData) {
-        html += '<div class="msg small">Ingen data tillgänglig.</div>';
+        html += '<div class="week-empty">—</div>';
       } else {
         const rd = dayData[currentRes] || { events: [], error: '' };
-        html += cardsHtml(rd.events, rd.error, true);
+        if (rd.error) {
+          html += '<div class="week-empty">!</div>';
+        } else if (!rd.events.length) {
+          html += '<div class="week-empty">Inga</div>';
+        } else {
+          for (const ev of rd.events) {
+            const name = esc(ev.description || '').split('\n')[0] || 'Bokat';
+            html += `<div class="week-card" style="background:${evBg(ev.description)}">
+              <div class="week-card-time">${esc(ev.start)}–${esc(ev.end)}</div>
+              <div class="week-card-name">${name}</div>
+            </div>`;
+          }
+        }
       }
       html += '</div>';
     }
+    html += '</div>';
     contentEl.innerHTML = html;
   }
+
   renderFooter();
 }
 
@@ -442,30 +559,50 @@ function renderFooter() {
   document.getElementById('footer').textContent = `Uppdaterad ${date} kl. ${time}`;
 }
 
+/* ── Event handlers ───────────────────────────────────── */
+
 function moveDay(delta) {
+  // In week view the arrows jump a whole week at a time.
   currentDate = shiftDate(currentDate, currentView === 'week' ? delta * 7 : delta);
   render();
 }
-function goToday()  { currentDate = stockholmToday(); render(); }
+
+function goToday() {
+  currentDate = stockholmToday();
+  render();
+}
+
 function setView(v) {
   currentView = v;
   document.getElementById('btnDay').classList.toggle('active',  v === 'day');
   document.getElementById('btnWeek').classList.toggle('active', v === 'week');
   render();
 }
-function onResChange(key) { currentRes = key; saveResource(key); render(); }
+
+function onResChange(key) {
+  currentRes = key;
+  saveResource(key);
+  render();
+}
+
+/* ── Initialisation ───────────────────────────────────── */
 
 (async function init() {
+  // Populate resource selector
   const sel = document.getElementById('resSel');
   sel.innerHTML = RESOURCES
     .map(r => `<option value="${r.key}"${r.key === currentRes ? ' selected' : ''}>${r.name}</option>`)
     .join('');
+
+  // Show shimmer while loading
   document.getElementById('dateLabel').textContent = fmtShort(currentDate);
   document.getElementById('content').innerHTML = shimmerHtml();
+
   try {
+    // Cache-bust so the browser always fetches the latest committed JSON.
     const resp = await fetch(`./data/bookings.json?t=${Date.now()}`);
     if (resp.status === 404) throw new Error('404 — data/bookings.json not yet generated. Run the GitHub Action first.');
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    if (!resp.ok)            throw new Error(`HTTP ${resp.status}`);
     bookingData = await resp.json();
     render();
   } catch (err) {
@@ -474,6 +611,8 @@ function onResChange(key) { currentRes = key; saveResource(key); render(); }
       `<div class="msg err">Kunde inte ladda bokningar.<br><small>${esc(err.message)}</small></div>`;
   }
 })();
+
+/* ── Service worker registration ──────────────────────── */
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
