@@ -1,0 +1,549 @@
+{
+  "generated": "2026-06-22T12:34:56.065Z",
+  "dates": {
+    "2026-06-22": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "09:00",
+            "end": "15:00",
+            "description": "Lovaktivitet"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-06-23": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "09:00",
+            "end": "15:00",
+            "description": "Lovaktivitet"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-06-24": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "09:00",
+            "end": "15:00",
+            "description": "Lovaktivitet"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-06-25": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "09:30",
+            "end": "11:30",
+            "description": "Fys.träning"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "09:00",
+            "end": "15:00",
+            "description": "Lovaktivitet"
+          },
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Innebandy"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": ""
+          }
+        ],
+        "error": ""
+      }
+    },
+    "2026-06-26": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "09:00",
+            "end": "15:00",
+            "description": "Lovaktivitet"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-06-27": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "12:00",
+            "end": "15:00",
+            "description": "Barnkalas"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-06-28": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "12:45",
+            "end": "15:15",
+            "description": "Barnkalas"
+          },
+          {
+            "start": "18:00",
+            "end": "19:00",
+            "description": "Innebandy"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-06-29": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "09:00",
+            "end": "15:00",
+            "description": "Lovaktivitet"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-06-30": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "09:00",
+            "end": "15:00",
+            "description": "Lovaktivitet"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-07-01": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "09:00",
+            "end": "15:00",
+            "description": "Lovaktivitet"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-07-02": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "09:30",
+            "end": "11:30",
+            "description": "Fys.träning"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "09:00",
+            "end": "15:00",
+            "description": "Lovaktivitet"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": ""
+          }
+        ],
+        "error": ""
+      }
+    },
+    "2026-07-03": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "09:00",
+            "end": "15:00",
+            "description": "Lovaktivitet"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-07-04": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "12:30",
+            "end": "15:00",
+            "description": "Barnkalas"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-07-05": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "18:00",
+            "end": "19:00",
+            "description": "Innebandy"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-07-06": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "09:00",
+            "end": "15:00",
+            "description": "Lovaktivitet"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-07-07": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "09:00",
+            "end": "15:00",
+            "description": "Lovaktivitet"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-07-08": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "09:00",
+            "end": "15:00",
+            "description": "Lovaktivitet"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-07-09": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "09:30",
+            "end": "11:30",
+            "description": "Fys.träning"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "09:00",
+            "end": "15:00",
+            "description": "Lovaktivitet"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": ""
+          }
+        ],
+        "error": ""
+      }
+    },
+    "2026-07-10": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "09:00",
+            "end": "15:00",
+            "description": "Lovaktivitet"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-07-11": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-07-12": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "18:00",
+            "end": "19:00",
+            "description": "Innebandy"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    }
+  }
+}
