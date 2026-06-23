@@ -1,3 +1,10 @@
+// scripts/fetch-bookings.js
+// Requires Node.js 20+ (uses built-in fetch and Headers.getSetCookie())
+// No npm packages needed.
+//
+// Fetches bookings for all resources for the current week + 2 weeks ahead,
+// then writes data/bookings.json to the repo root.
+
 'use strict';
 
 const fs   = require('fs');
@@ -10,13 +17,25 @@ const RESOURCE_MAP = {
   svanis:    { id: 34,  name: 'Svanis' },
   tallbacka: { id: 85,  name: 'Tallbacka' },
   kyrkis:    { id: 55,  name: 'Kyrkis' }
+  /* ── Inactive resources (IDs confirmed) ──────────────────
+  grondal:   { id: 25,  name: 'Gröndal' },
+  gronnere:  { id: 28,  name: 'Gröndal Nedre' },
+  sunnerby:  { id: 57,  name: 'Sunnerby' },
+  kvarndans: { id: 109, name: 'Kvarnis Dans' },
+  kvarnis:   { id: 111, name: 'Kvarnis' },
+  kallberga: { id: 5,   name: 'Källberga' },
+  vika:      { id: 8,   name: 'Vika' },
+  vansta:    { id: 65,  name: 'Vansta' }
+  ─────────────────────────────────────────────────────── */
 };
+
+/* ── Date helpers ───────────────────────────────────────── */
 
 function getUtcRangeForLocalDate(dateString) {
   const [y, m, d] = dateString.split('-').map(Number);
   return {
-    startIso: new Date(Date.UTC(y, m - 1, d - 1, 21, 0, 0)).toISOString(),
-    endIso:   new Date(Date.UTC(y, m - 1, d,     23, 0, 0)).toISOString()
+    startIso: new Date(Date.UTC(y, m - 1, d - 1, 21, 0, 0)).toISOString(),  // prev-day 21:00 UTC
+    endIso:   new Date(Date.UTC(y, m - 1, d,     23, 0, 0)).toISOString()   // curr-day 23:00 UTC
   };
 }
 
@@ -28,15 +47,19 @@ function shiftDate(ds, n) {
 
 function getMondayOf(ds) {
   const d = new Date(ds + 'T12:00:00Z');
-  const day = d.getUTCDay();
+  const day = d.getUTCDay();  // 0 = Sunday
   d.setUTCDate(d.getUTCDate() + (day === 0 ? -6 : 1 - day));
   return d.toISOString().slice(0, 10);
 }
 
+/**
+ * Returns YYYY-MM-DD strings from 30 days ago through 60 days ahead (91 days total).
+ */
 function getFetchDates() {
-  const today  = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Stockholm' }).format(new Date());
-  const monday = getMondayOf(today);
-  return Array.from({ length: 21 }, (_, i) => shiftDate(monday, i));
+  const today = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Stockholm' })
+    .format(new Date());
+  const start = shiftDate(today, -30);
+  return Array.from({ length: 91 }, (_, i) => shiftDate(start, i));
 }
 
 function cleanDescription(html) {
@@ -48,13 +71,17 @@ function cleanDescription(html) {
     .trim();
 }
 
+/* ── API calls ──────────────────────────────────────────── */
+
 async function getSessionCookie() {
   const resp = await fetch(BASE_URL + '/', {
     headers: { 'Accept': 'text/html,application/xhtml+xml,*/*' },
     redirect: 'follow'
   });
+  // getSetCookie() returns each Set-Cookie header as a separate array entry (Node 20+)
   const cookies = resp.headers.getSetCookie?.() ?? [];
   if (cookies.length === 0) {
+    // Fallback: try combined header string
     const raw = resp.headers.get('set-cookie') || '';
     return raw.split(/,(?=[^ ])/).map(c => c.split(';')[0].trim()).filter(Boolean).join('; ');
   }
@@ -63,7 +90,8 @@ async function getSessionCookie() {
 
 async function fetchResourceDay(resourceId, dateString, cookieHeader) {
   const range = getUtcRangeForLocalDate(dateString);
-  const resp  = await fetch(BASE_URL + '/BookingAPI/GetBookingsForSchedule', {
+
+  const resp = await fetch(BASE_URL + '/BookingAPI/GetBookingsForSchedule', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -81,9 +109,11 @@ async function fetchResourceDay(resourceId, dateString, cookieHeader) {
     }),
     redirect: 'follow'
   });
+
   const text = await resp.text();
-  if (!resp.ok)               throw new Error(`HTTP ${resp.status}: ${text.slice(0, 200)}`);
+  if (!resp.ok)          throw new Error(`HTTP ${resp.status}: ${text.slice(0, 200)}`);
   if (text.trim()[0] === '<') throw new Error(`Expected JSON, got HTML: ${text.slice(0, 100)}`);
+
   return JSON.parse(text);
 }
 
@@ -106,14 +136,16 @@ async function getBookingsForDay(resourceKey, dateString, cookieHeader) {
   }
 }
 
+/* ── Main ───────────────────────────────────────────────── */
+
 async function main() {
   console.log('Fetching session cookie...');
   const cookie = await getSessionCookie();
-  console.log(`Cookie: ${cookie ? cookie.slice(0, 50) + '…' : '(none)'}`);
+  console.log(`Cookie: ${cookie ? cookie.slice(0, 50) + '…' : '(none — may still work)'}`);
 
-  const dates  = getFetchDates();
-  const keys   = Object.keys(RESOURCE_MAP);
-  console.log(`\nFetching ${dates.length} dates × ${keys.length} resources\n`);
+  const dates = getFetchDates();
+  const keys  = Object.keys(RESOURCE_MAP);
+  console.log(`\nFetching ${dates.length} dates × ${keys.length} resources = ${dates.length * keys.length} calls\n`);
 
   const result = { generated: new Date().toISOString(), dates: {} };
 
@@ -122,8 +154,9 @@ async function main() {
     for (const key of keys) {
       process.stdout.write(`  ${date}  ${key.padEnd(10)}`);
       result.dates[date][key] = await getBookingsForDay(key, date, cookie);
-      process.stdout.write(`${result.dates[date][key].events.length} event(s)\n`);
-      await new Promise(r => setTimeout(r, 150));
+      const n = result.dates[date][key].events.length;
+      process.stdout.write(`${n} event(s)\n`);
+      await new Promise(r => setTimeout(r, 150));   // polite delay
     }
   }
 
@@ -134,4 +167,7 @@ async function main() {
   console.log(`\nWritten → ${outFile}`);
 }
 
-main().catch(err => { console.error('Fatal:', err); process.exit(1); });
+main().catch(err => {
+  console.error('Fatal:', err);
+  process.exit(1);
+});
