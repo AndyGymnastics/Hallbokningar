@@ -1,45 +1,6 @@
 {
-  "generated": "2026-06-29T21:40:58.121Z",
+  "generated": "2026-06-29T22:58:22.517Z",
   "dates": {
-    "2026-05-30": {
-      "viahallen": {
-        "events": [],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "09:00",
-            "end": "10:00",
-            "description": "Knatteskutt"
-          },
-          {
-            "start": "10:00",
-            "end": "13:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "13:00",
-            "end": "15:30",
-            "description": "Barnkalas"
-          },
-          {
-            "start": "19:00",
-            "end": "20:00",
-            "description": ""
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [],
-        "error": ""
-      }
-    },
     "2026-05-31": {
       "viahallen": {
         "events": [],
@@ -2603,6 +2564,40 @@
           {
             "start": "17:00",
             "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-08-29": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "10:00",
+            "end": "11:30",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "11:30",
+            "end": "12:30",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "12:30",
+            "end": "15:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
           }
         ],
