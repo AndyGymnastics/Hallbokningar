@@ -1,42 +1,6 @@
 {
-  "generated": "2026-07-03T21:06:52.397Z",
+  "generated": "2026-07-03T22:33:30.861Z",
   "dates": {
-    "2026-06-03": {
-      "viahallen": {
-        "events": [
-          {
-            "start": "18:30",
-            "end": "21:00",
-            "description": "Nynäshamns Basketbollklubb\n\nBasket"
-          }
-        ],
-        "error": ""
-      },
-      "svanis": {
-        "events": [],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [
-          {
-            "start": "18:00",
-            "end": "20:00",
-            "description": "Ösmo Taekwondo Klubb\n\nTae Kwon Do"
-          }
-        ],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [
-          {
-            "start": "17:00",
-            "end": "22:00",
-            "description": "Skolarrangemang"
-          }
-        ],
-        "error": ""
-      }
-    },
     "2026-06-04": {
       "viahallen": {
         "events": [
@@ -2631,6 +2595,47 @@
       },
       "tallbacka": {
         "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-09-02": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Innebandy"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [
+          {
+            "start": "18:00",
+            "end": "20:00",
+            "description": "Ösmo Taekwondo Klubb\n\nTae Kwon Do"
+          }
+        ],
         "error": ""
       },
       "kyrkis": {
