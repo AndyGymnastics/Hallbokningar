@@ -1,42 +1,6 @@
 {
-  "generated": "2026-07-04T21:31:40.089Z",
+  "generated": "2026-07-04T22:57:48.312Z",
   "dates": {
-    "2026-06-04": {
-      "viahallen": {
-        "events": [
-          {
-            "start": "17:00",
-            "end": "18:00",
-            "description": "Nynäshamns Basketbollklubb\n\nBasket"
-          }
-        ],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "19:00",
-            "end": "20:00",
-            "description": "Innebandy"
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [
-          {
-            "start": "19:00",
-            "end": "20:00",
-            "description": ""
-          }
-        ],
-        "error": ""
-      }
-    },
     "2026-06-05": {
       "viahallen": {
         "events": [],
@@ -2640,6 +2604,41 @@
       },
       "kyrkis": {
         "events": [],
+        "error": ""
+      }
+    },
+    "2026-09-03": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "21:30",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": ""
+          }
+        ],
         "error": ""
       }
     }
