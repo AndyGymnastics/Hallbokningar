@@ -1,30 +1,6 @@
 {
-  "generated": "2026-07-09T21:58:00.189Z",
+  "generated": "2026-07-09T23:18:10.883Z",
   "dates": {
-    "2026-06-09": {
-      "viahallen": {
-        "events": [],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "17:00",
-            "end": "18:00",
-            "description": "Badminton"
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [],
-        "error": ""
-      }
-    },
     "2026-06-10": {
       "viahallen": {
         "events": [
@@ -2704,6 +2680,24 @@
             "description": "Ösmo Taekwondo Klubb\n\nTae Kwon Do"
           }
         ],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-09-08": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
         "error": ""
       },
       "kyrkis": {
