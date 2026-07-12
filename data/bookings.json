@@ -1,30 +1,6 @@
 {
-  "generated": "2026-07-12T21:51:03.929Z",
+  "generated": "2026-07-12T22:49:37.444Z",
   "dates": {
-    "2026-06-12": {
-      "viahallen": {
-        "events": [],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "09:00",
-            "end": "15:00",
-            "description": "Lovaktivitet"
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [],
-        "error": ""
-      }
-    },
     "2026-06-13": {
       "viahallen": {
         "events": [],
@@ -2713,6 +2689,36 @@
             "description": ""
           }
         ],
+        "error": ""
+      }
+    },
+    "2026-09-11": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
         "error": ""
       }
     }
