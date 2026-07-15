@@ -1,41 +1,6 @@
 {
-  "generated": "2026-07-15T20:33:24.265Z",
+  "generated": "2026-07-15T22:01:05.431Z",
   "dates": {
-    "2026-06-15": {
-      "viahallen": {
-        "events": [
-          {
-            "start": "08:00",
-            "end": "15:30",
-            "description": "Malins Dansstudio i Nynäshamn AB\n\nDansläger"
-          },
-          {
-            "start": "18:00",
-            "end": "19:30",
-            "description": "Nynäshamns Basketbollklubb\n\nBasket"
-          }
-        ],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "09:00",
-            "end": "15:00",
-            "description": "Lovaktivitet"
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [],
-        "error": ""
-      }
-    },
     "2026-06-16": {
       "viahallen": {
         "events": [
@@ -2767,6 +2732,52 @@
       },
       "tallbacka": {
         "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-09-14": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "18:30",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "18:30",
+            "end": "21:30",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [
+          {
+            "start": "18:00",
+            "end": "20:00",
+            "description": "Ösmo Taekwondo Klubb\n\nTae Kwon Do"
+          }
+        ],
         "error": ""
       },
       "kyrkis": {
