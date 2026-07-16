@@ -1,41 +1,6 @@
 {
-  "generated": "2026-07-16T20:58:01.707Z",
+  "generated": "2026-07-16T22:10:41.847Z",
   "dates": {
-    "2026-06-16": {
-      "viahallen": {
-        "events": [
-          {
-            "start": "08:00",
-            "end": "15:30",
-            "description": "Malins Dansstudio i Nynäshamn AB\n\nDansläger"
-          }
-        ],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "09:00",
-            "end": "15:00",
-            "description": "Lovaktivitet"
-          },
-          {
-            "start": "17:00",
-            "end": "18:00",
-            "description": "Badminton"
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [],
-        "error": ""
-      }
-    },
     "2026-06-17": {
       "viahallen": {
         "events": [
@@ -2778,6 +2743,30 @@
             "description": "Ösmo Taekwondo Klubb\n\nTae Kwon Do"
           }
         ],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-09-15": {
+      "viahallen": {
+        "events": [],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "18:00",
+            "end": "20:00",
+            "description": "Nynäshamns Bågskytteklubb\n\nBågskytte"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
         "error": ""
       },
       "kyrkis": {
