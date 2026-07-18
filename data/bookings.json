@@ -1,41 +1,6 @@
 {
-  "generated": "2026-07-18T21:22:53.642Z",
+  "generated": "2026-07-18T22:22:56.260Z",
   "dates": {
-    "2026-06-18": {
-      "viahallen": {
-        "events": [],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "09:00",
-            "end": "15:00",
-            "description": "Lovaktivitet"
-          },
-          {
-            "start": "19:00",
-            "end": "20:00",
-            "description": "Innebandy"
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [
-          {
-            "start": "19:00",
-            "end": "20:00",
-            "description": ""
-          }
-        ],
-        "error": ""
-      }
-    },
     "2026-06-19": {
       "viahallen": {
         "events": [],
@@ -2777,6 +2742,47 @@
       },
       "kyrkis": {
         "events": [],
+        "error": ""
+      }
+    },
+    "2026-09-17": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "21:30",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "18:00",
+            "end": "20:00",
+            "description": "Nynäshamns Bågskytteklubb\n\nBågskytte"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": ""
+          }
+        ],
         "error": ""
       }
     }
