@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-30T15:30:44.041Z",
+  "generated": "2026-07-30T17:26:48.429Z",
   "dates": {
     "2026-06-30": {
       "viahallen": {
@@ -846,13 +846,7 @@
         "error": ""
       },
       "svanis": {
-        "events": [
-          {
-            "start": "10:00",
-            "end": "11:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
+        "events": [],
         "error": ""
       },
       "tallbacka": {
