@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-02T12:34:14.519Z",
+  "generated": "2026-08-02T14:28:07.976Z",
   "dates": {
     "2026-07-03": {
       "viahallen": {
@@ -882,11 +882,6 @@
             "start": "09:30",
             "end": "11:30",
             "description": "Fys.träning"
-          },
-          {
-            "start": "19:00",
-            "end": "21:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
           }
         ],
         "error": ""
@@ -918,13 +913,7 @@
     },
     "2026-08-07": {
       "viahallen": {
-        "events": [
-          {
-            "start": "17:00",
-            "end": "19:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
+        "events": [],
         "error": ""
       },
       "svanis": {
@@ -952,13 +941,7 @@
         "error": ""
       },
       "svanis": {
-        "events": [
-          {
-            "start": "10:00",
-            "end": "11:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
+        "events": [],
         "error": ""
       },
       "tallbacka": {
