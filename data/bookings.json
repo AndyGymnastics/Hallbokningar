@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06T06:30:14.740Z",
+  "generated": "2026-08-06T09:24:52.250Z",
   "dates": {
     "2026-07-07": {
       "viahallen": {
@@ -983,11 +983,6 @@
             "start": "09:30",
             "end": "11:30",
             "description": "Fys.träning"
-          },
-          {
-            "start": "19:00",
-            "end": "21:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
           }
         ],
         "error": ""
@@ -1019,13 +1014,7 @@
     },
     "2026-08-14": {
       "viahallen": {
-        "events": [
-          {
-            "start": "17:00",
-            "end": "19:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
+        "events": [],
         "error": ""
       },
       "svanis": {
@@ -1054,11 +1043,6 @@
       },
       "svanis": {
         "events": [
-          {
-            "start": "10:00",
-            "end": "11:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
           {
             "start": "13:30",
             "end": "16:15",
