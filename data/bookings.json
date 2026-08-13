@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-13T09:11:56.412Z",
+  "generated": "2026-08-13T10:35:51.886Z",
   "dates": {
     "2026-07-14": {
       "viahallen": {
@@ -1833,7 +1833,13 @@
         "error": ""
       },
       "tallbacka": {
-        "events": [],
+        "events": [
+          {
+            "start": "10:00",
+            "end": "12:00",
+            "description": "Gymnastik"
+          }
+        ],
         "error": ""
       },
       "kyrkis": {
@@ -2685,7 +2691,13 @@
         "error": ""
       },
       "tallbacka": {
-        "events": [],
+        "events": [
+          {
+            "start": "10:00",
+            "end": "12:00",
+            "description": "Gymnastik"
+          }
+        ],
         "error": ""
       },
       "kyrkis": {
