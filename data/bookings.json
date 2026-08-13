@@ -1,36 +1,6 @@
 {
-  "generated": "2026-08-13T21:44:39.641Z",
+  "generated": "2026-08-13T22:41:01.149Z",
   "dates": {
-    "2026-07-14": {
-      "viahallen": {
-        "events": [
-          {
-            "start": "17:00",
-            "end": "20:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "09:00",
-            "end": "15:00",
-            "description": "Lovaktivitet"
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [],
-        "error": ""
-      }
-    },
     "2026-07-15": {
       "viahallen": {
         "events": [],
@@ -3200,6 +3170,36 @@
             "description": "Ösmo Taekwondo Klubb\n\nTae Kwon Do"
           }
         ],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-10-13": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "18:00",
+            "end": "20:00",
+            "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "18:00",
+            "end": "20:00",
+            "description": "Nynäshamns Bågskytteklubb\n\nBågskytte"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
         "error": ""
       },
       "kyrkis": {
