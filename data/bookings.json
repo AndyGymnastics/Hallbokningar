@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-14T21:24:06.822Z",
+  "generated": "2026-08-14T21:50:28.699Z",
   "dates": {
     "2026-07-15": {
       "viahallen": {
@@ -1818,8 +1818,14 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
-        "error": "Kunde inte läsa bokningar för Kyrkis."
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": ""
+          }
+        ],
+        "error": ""
       }
     },
     "2026-09-11": {
