@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-18T05:57:14.708Z",
+  "generated": "2026-08-18T06:52:24.033Z",
   "dates": {
     "2026-07-19": {
       "viahallen": {
@@ -1131,7 +1131,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Badminton"
+          }
+        ],
         "error": ""
       }
     },
@@ -2064,7 +2070,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "11:00",
+            "end": "17:00",
+            "description": "Barnkalas"
+          }
+        ],
         "error": ""
       }
     },
