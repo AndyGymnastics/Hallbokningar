@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T13:43:04.215Z",
+  "generated": "2026-08-19T14:33:02.519Z",
   "dates": {
     "2026-07-20": {
       "viahallen": {
@@ -819,22 +819,11 @@
     },
     "2026-08-19": {
       "viahallen": {
-        "events": [
-          {
-            "start": "17:00",
-            "end": "19:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
+        "events": [],
         "error": ""
       },
       "svanis": {
         "events": [
-          {
-            "start": "17:00",
-            "end": "19:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
           {
             "start": "19:00",
             "end": "20:00",
@@ -899,13 +888,7 @@
         "error": ""
       },
       "svanis": {
-        "events": [
-          {
-            "start": "17:00",
-            "end": "19:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
+        "events": [],
         "error": ""
       },
       "tallbacka": {
@@ -923,23 +906,7 @@
         "error": ""
       },
       "svanis": {
-        "events": [
-          {
-            "start": "10:00",
-            "end": "11:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "11:30",
-            "end": "12:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "12:30",
-            "end": "15:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
+        "events": [],
         "error": ""
       },
       "tallbacka": {
@@ -974,21 +941,6 @@
       },
       "svanis": {
         "events": [
-          {
-            "start": "12:00",
-            "end": "13:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "13:00",
-            "end": "14:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "14:00",
-            "end": "15:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
           {
             "start": "18:00",
             "end": "19:00",
