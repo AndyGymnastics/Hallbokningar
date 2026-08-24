@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T20:34:36.482Z",
+  "generated": "2026-08-24T21:28:29.678Z",
   "dates": {
     "2026-07-25": {
       "viahallen": {
@@ -2924,19 +2924,8 @@
         "error": ""
       },
       "svanis": {
-        "events": [
-          {
-            "start": "17:00",
-            "end": "19:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "19:00",
-            "end": "20:00",
-            "description": "Innebandy"
-          }
-        ],
-        "error": ""
+        "events": [],
+        "error": "Kunde inte läsa bokningar för Svanis."
       },
       "tallbacka": {
         "events": [
