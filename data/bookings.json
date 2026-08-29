@@ -1,47 +1,6 @@
 {
-  "generated": "2026-08-29T21:52:48.272Z",
+  "generated": "2026-08-29T23:54:40.892Z",
   "dates": {
-    "2026-07-30": {
-      "viahallen": {
-        "events": [
-          {
-            "start": "09:30",
-            "end": "11:30",
-            "description": "Fys.träning"
-          },
-          {
-            "start": "11:30",
-            "end": "17:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "09:30",
-            "end": "15:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [
-          {
-            "start": "19:00",
-            "end": "20:00",
-            "description": ""
-          }
-        ],
-        "error": ""
-      }
-    },
     "2026-07-31": {
       "viahallen": {
         "events": [],
@@ -3523,6 +3482,47 @@
             "start": "19:00",
             "end": "20:00",
             "description": "Badminton"
+          }
+        ],
+        "error": ""
+      }
+    },
+    "2026-10-29": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "21:30",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "18:00",
+            "end": "20:00",
+            "description": "Nynäshamns Bågskytteklubb\n\nBågskytte"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": ""
           }
         ],
         "error": ""
