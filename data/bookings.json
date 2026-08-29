@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-29T03:31:48.413Z",
+  "generated": "2026-08-29T10:50:38.143Z",
   "dates": {
     "2026-07-30": {
       "viahallen": {
@@ -1071,7 +1071,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Badminton"
+          }
+        ],
         "error": ""
       }
     },
@@ -1357,7 +1363,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Badminton"
+          }
+        ],
         "error": ""
       }
     },
@@ -1628,7 +1640,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Badminton"
+          }
+        ],
         "error": ""
       }
     },
@@ -1927,7 +1945,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Badminton"
+          }
+        ],
         "error": ""
       }
     },
@@ -2232,7 +2256,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Badminton"
+          }
+        ],
         "error": ""
       }
     },
@@ -2350,6 +2380,11 @@
             "start": "10:00",
             "end": "11:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "13:00",
+            "end": "16:00",
+            "description": "Barnkalas"
           }
         ],
         "error": ""
@@ -2537,7 +2572,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Badminton"
+          }
+        ],
         "error": ""
       }
     },
@@ -2846,7 +2887,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Badminton"
+          }
+        ],
         "error": ""
       }
     },
@@ -3155,7 +3202,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Badminton"
+          }
+        ],
         "error": ""
       }
     },
@@ -3465,7 +3518,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Badminton"
+          }
+        ],
         "error": ""
       }
     }
