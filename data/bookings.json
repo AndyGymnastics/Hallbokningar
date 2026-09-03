@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03T11:31:41.087Z",
+  "generated": "2026-09-03T15:53:05.512Z",
   "dates": {
     "2026-08-04": {
       "viahallen": {
@@ -3273,6 +3273,11 @@
       "viahallen": {
         "events": [
           {
+            "start": "08:00",
+            "end": "17:00",
+            "description": "Skolaktivitet"
+          },
+          {
             "start": "17:00",
             "end": "18:30",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
@@ -3319,6 +3324,11 @@
       "viahallen": {
         "events": [
           {
+            "start": "08:00",
+            "end": "17:00",
+            "description": "Skolaktivitet"
+          },
+          {
             "start": "18:00",
             "end": "20:00",
             "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
@@ -3348,6 +3358,11 @@
     "2026-10-28": {
       "viahallen": {
         "events": [
+          {
+            "start": "08:00",
+            "end": "17:00",
+            "description": "Skolaktivitet"
+          },
           {
             "start": "17:00",
             "end": "19:00",
@@ -3401,6 +3416,11 @@
       "viahallen": {
         "events": [
           {
+            "start": "08:00",
+            "end": "17:00",
+            "description": "Skolaktivitet"
+          },
+          {
             "start": "17:00",
             "end": "19:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
@@ -3441,6 +3461,11 @@
     "2026-10-30": {
       "viahallen": {
         "events": [
+          {
+            "start": "08:00",
+            "end": "17:00",
+            "description": "Skolaktivitet"
+          },
           {
             "start": "17:00",
             "end": "19:00",
