@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-09T09:35:43.054Z",
+  "generated": "2026-09-09T14:11:37.902Z",
   "dates": {
     "2026-08-10": {
       "viahallen": {
@@ -1205,7 +1205,13 @@
         "error": ""
       },
       "tallbacka": {
-        "events": [],
+        "events": [
+          {
+            "start": "13:00",
+            "end": "15:00",
+            "description": "Barnkalas"
+          }
+        ],
         "error": ""
       },
       "kyrkis": {
@@ -1733,6 +1739,11 @@
             "start": "12:30",
             "end": "15:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "16:00",
+            "end": "18:00",
+            "description": "Barnkalas"
           }
         ],
         "error": ""
@@ -3067,6 +3078,11 @@
             "start": "14:00",
             "end": "15:30",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "15:30",
+            "end": "18:00",
+            "description": "Barnkalas"
           },
           {
             "start": "18:00",
