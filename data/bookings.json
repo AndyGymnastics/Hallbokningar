@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-09T05:00:10.058Z",
+  "generated": "2026-09-09T09:35:43.054Z",
   "dates": {
     "2026-08-10": {
       "viahallen": {
@@ -1234,11 +1234,6 @@
           {
             "start": "17:00",
             "end": "19:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "19:00",
-            "end": "20:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
           }
         ],
