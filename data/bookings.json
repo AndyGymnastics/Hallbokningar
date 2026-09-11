@@ -1,41 +1,6 @@
 {
-  "generated": "2026-09-11T21:51:07.289Z",
+  "generated": "2026-09-11T23:53:38.989Z",
   "dates": {
-    "2026-08-12": {
-      "viahallen": {
-        "events": [
-          {
-            "start": "16:00",
-            "end": "20:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "09:00",
-            "end": "15:00",
-            "description": "Lovaktivitet"
-          },
-          {
-            "start": "19:00",
-            "end": "20:00",
-            "description": "Innebandy"
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [],
-        "error": ""
-      }
-    },
     "2026-08-13": {
       "viahallen": {
         "events": [
@@ -3781,6 +3746,58 @@
       },
       "kyrkis": {
         "events": [],
+        "error": ""
+      }
+    },
+    "2026-11-11": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "20:30",
+            "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Innebandy"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [
+          {
+            "start": "18:00",
+            "end": "20:00",
+            "description": "Ösmo Taekwondo Klubb\n\nTae Kwon Do"
+          }
+        ],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Badminton"
+          }
+        ],
         "error": ""
       }
     }
