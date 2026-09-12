@@ -1,42 +1,6 @@
 {
-  "generated": "2026-09-12T20:47:38.588Z",
+  "generated": "2026-09-12T22:52:00.923Z",
   "dates": {
-    "2026-08-13": {
-      "viahallen": {
-        "events": [
-          {
-            "start": "09:30",
-            "end": "11:30",
-            "description": "Fys.träning"
-          }
-        ],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "09:00",
-            "end": "15:00",
-            "description": "Lovaktivitet"
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [
-          {
-            "start": "19:00",
-            "end": "20:00",
-            "description": ""
-          }
-        ],
-        "error": ""
-      }
-    },
     "2026-08-14": {
       "viahallen": {
         "events": [],
@@ -3796,6 +3760,53 @@
             "start": "19:00",
             "end": "20:00",
             "description": "Badminton"
+          }
+        ],
+        "error": ""
+      }
+    },
+    "2026-11-12": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "21:30",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "18:00",
+            "end": "20:00",
+            "description": "Nynäshamns Bågskytteklubb\n\nBågskytte"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [
+          {
+            "start": "10:00",
+            "end": "12:00",
+            "description": "Gymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": ""
           }
         ],
         "error": ""
