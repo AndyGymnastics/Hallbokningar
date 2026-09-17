@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T01:36:31.996Z",
+  "generated": "2026-09-17T07:13:40.048Z",
   "dates": {
     "2026-08-18": {
       "viahallen": {
@@ -2281,6 +2281,11 @@
             "start": "18:00",
             "end": "20:00",
             "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
+          },
+          {
+            "start": "20:00",
+            "end": "21:00",
+            "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
           }
         ],
         "error": ""
@@ -2595,6 +2600,11 @@
           {
             "start": "18:00",
             "end": "20:00",
+            "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
+          },
+          {
+            "start": "20:00",
+            "end": "21:00",
             "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
           }
         ],
@@ -2933,6 +2943,11 @@
             "start": "18:00",
             "end": "20:00",
             "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
+          },
+          {
+            "start": "20:00",
+            "end": "21:00",
+            "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
           }
         ],
         "error": ""
@@ -3258,6 +3273,11 @@
             "start": "18:00",
             "end": "20:00",
             "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
+          },
+          {
+            "start": "20:00",
+            "end": "21:00",
+            "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
           }
         ],
         "error": ""
@@ -3577,6 +3597,11 @@
           {
             "start": "18:00",
             "end": "20:00",
+            "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
+          },
+          {
+            "start": "20:00",
+            "end": "21:00",
             "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
           }
         ],
