@@ -1,40 +1,6 @@
 {
-  "generated": "2026-09-28T16:54:00.185Z",
+  "generated": "2026-09-28T22:24:59.487Z",
   "dates": {
-    "2026-08-29": {
-      "viahallen": {
-        "events": [],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "10:00",
-            "end": "11:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "11:30",
-            "end": "12:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "12:30",
-            "end": "15:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [],
-        "error": ""
-      }
-    },
     "2026-08-30": {
       "viahallen": {
         "events": [
@@ -4027,6 +3993,57 @@
       },
       "tallbacka": {
         "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-11-28": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "09:30",
+            "end": "12:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "10:00",
+            "end": "11:30",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "11:30",
+            "end": "12:30",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "12:30",
+            "end": "15:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "15:30",
+            "end": "18:30",
+            "description": "Barnkalas"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [
+          {
+            "start": "10:00",
+            "end": "11:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
         "error": ""
       },
       "kyrkis": {
