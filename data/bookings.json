@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01T06:54:01.712Z",
+  "generated": "2026-10-01T14:14:47.117Z",
   "dates": {
     "2026-09-01": {
       "viahallen": {
@@ -2776,6 +2776,11 @@
       "viahallen": {
         "events": [
           {
+            "start": "17:00",
+            "end": "18:00",
+            "description": "Nynäshamns IF Fotboll\n\nFotboll"
+          },
+          {
             "start": "18:00",
             "end": "20:00",
             "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
@@ -2918,7 +2923,13 @@
         "error": ""
       },
       "svanis": {
-        "events": [],
+        "events": [
+          {
+            "start": "17:00",
+            "end": "20:00",
+            "description": "Övrig verksamhet"
+          }
+        ],
         "error": ""
       },
       "tallbacka": {
@@ -3105,6 +3116,11 @@
     "2026-11-10": {
       "viahallen": {
         "events": [
+          {
+            "start": "17:00",
+            "end": "18:00",
+            "description": "Nynäshamns IF Fotboll\n\nFotboll"
+          },
           {
             "start": "18:00",
             "end": "20:00",
@@ -3436,6 +3452,11 @@
       "viahallen": {
         "events": [
           {
+            "start": "17:00",
+            "end": "18:00",
+            "description": "Nynäshamns IF Fotboll\n\nFotboll"
+          },
+          {
             "start": "18:00",
             "end": "20:00",
             "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
@@ -3760,6 +3781,11 @@
     "2026-11-24": {
       "viahallen": {
         "events": [
+          {
+            "start": "17:00",
+            "end": "18:00",
+            "description": "Nynäshamns IF Fotboll\n\nFotboll"
+          },
           {
             "start": "18:00",
             "end": "20:00",
