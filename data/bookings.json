@@ -1,41 +1,6 @@
 {
-  "generated": "2026-10-03T19:01:23.205Z",
+  "generated": "2026-10-03T22:18:39.761Z",
   "dates": {
-    "2026-09-03": {
-      "viahallen": {
-        "events": [
-          {
-            "start": "17:00",
-            "end": "19:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "19:00",
-            "end": "21:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
-        "error": ""
-      },
-      "svanis": {
-        "events": [],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [
-          {
-            "start": "19:00",
-            "end": "20:00",
-            "description": ""
-          }
-        ],
-        "error": ""
-      }
-    },
     "2026-09-04": {
       "viahallen": {
         "events": [
@@ -4130,6 +4095,58 @@
             "start": "19:00",
             "end": "20:00",
             "description": "Badminton"
+          }
+        ],
+        "error": ""
+      }
+    },
+    "2026-12-03": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "21:30",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "18:00",
+            "end": "20:00",
+            "description": "Nynäshamns Bågskytteklubb\n\nBågskytte"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [
+          {
+            "start": "10:00",
+            "end": "12:00",
+            "description": "Gymnastik"
+          },
+          {
+            "start": "18:00",
+            "end": "19:00",
+            "description": "Nynäshamns IF Fotboll\n\nFotboll"
+          }
+        ],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": ""
           }
         ],
         "error": ""
