@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07T06:52:40.867Z",
+  "generated": "2026-10-07T14:14:13.531Z",
   "dates": {
     "2026-09-07": {
       "viahallen": {
@@ -1457,11 +1457,6 @@
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
           },
           {
-            "start": "15:30",
-            "end": "17:30",
-            "description": "Knatteskutt"
-          },
-          {
             "start": "18:00",
             "end": "19:00",
             "description": "Innebandy"
@@ -2061,6 +2056,11 @@
       },
       "svanis": {
         "events": [
+          {
+            "start": "09:00",
+            "end": "10:00",
+            "description": "Knatteskutt"
+          },
           {
             "start": "10:00",
             "end": "12:00",
