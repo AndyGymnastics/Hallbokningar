@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07T00:54:33.827Z",
+  "generated": "2026-10-07T06:52:40.867Z",
   "dates": {
     "2026-09-07": {
       "viahallen": {
@@ -1648,7 +1648,13 @@
         "error": ""
       },
       "svanis": {
-        "events": [],
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Barnkalas"
+          }
+        ],
         "error": ""
       },
       "tallbacka": {
