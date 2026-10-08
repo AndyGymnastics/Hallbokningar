@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T06:28:21.119Z",
+  "generated": "2026-10-08T13:54:45.437Z",
   "dates": {
     "2026-09-08": {
       "viahallen": {
@@ -2064,13 +2064,7 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [
-          {
-            "start": "13:00",
-            "end": "15:30",
-            "description": "Barnkalas"
-          }
-        ],
+        "events": [],
         "error": ""
       }
     },
@@ -2404,7 +2398,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "13:00",
+            "end": "15:30",
+            "description": "Barnkalas"
+          }
+        ],
         "error": ""
       }
     },
@@ -2951,7 +2951,13 @@
         "error": ""
       },
       "svanis": {
-        "events": [],
+        "events": [
+          {
+            "start": "17:00",
+            "end": "20:00",
+            "description": "Övrig verksamhet"
+          }
+        ],
         "error": ""
       },
       "tallbacka": {
