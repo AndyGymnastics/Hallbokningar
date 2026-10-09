@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09T06:29:33.016Z",
+  "generated": "2026-10-09T13:39:39.698Z",
   "dates": {
     "2026-09-09": {
       "viahallen": {
@@ -1802,11 +1802,6 @@
             "start": "17:00",
             "end": "19:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "19:00",
-            "end": "20:30",
-            "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
           }
         ],
         "error": ""
@@ -1998,11 +1993,6 @@
             "start": "14:00",
             "end": "17:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "18:00",
-            "end": "20:00",
-            "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
           }
         ],
         "error": ""
