@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-11T09:10:11.035Z",
+  "generated": "2026-10-11T15:52:36.172Z",
   "dates": {
     "2026-09-11": {
       "viahallen": {
@@ -1445,13 +1445,7 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [
-          {
-            "start": "19:00",
-            "end": "20:00",
-            "description": "Badminton"
-          }
-        ],
+        "events": [],
         "error": ""
       }
     },
