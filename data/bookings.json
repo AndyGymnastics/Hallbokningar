@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T04:37:34.180Z",
+  "generated": "2026-10-12T12:46:58.133Z",
   "dates": {
     "2026-09-12": {
       "viahallen": {
@@ -1473,6 +1473,11 @@
             "start": "17:00",
             "end": "19:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "22:00",
+            "description": "Idrott"
           }
         ],
         "error": ""
@@ -1778,6 +1783,11 @@
             "start": "17:00",
             "end": "19:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "22:00",
+            "description": "Idrott"
           }
         ],
         "error": ""
@@ -2119,6 +2129,11 @@
             "start": "17:00",
             "end": "19:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "22:00",
+            "description": "Idrott"
           }
         ],
         "error": ""
@@ -2163,6 +2178,11 @@
             "start": "12:30",
             "end": "15:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "15:30",
+            "end": "18:00",
+            "description": "Arrangemang"
           }
         ],
         "error": ""
@@ -2440,6 +2460,11 @@
             "start": "17:00",
             "end": "19:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "22:00",
+            "description": "Idrott"
           }
         ],
         "error": ""
@@ -2470,6 +2495,11 @@
             "start": "09:30",
             "end": "12:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Idrott"
           }
         ],
         "error": ""
@@ -2786,6 +2816,11 @@
             "start": "17:00",
             "end": "19:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "22:00",
+            "description": "Idrott"
           }
         ],
         "error": ""
@@ -3128,6 +3163,11 @@
             "start": "17:00",
             "end": "19:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "22:00",
+            "description": "Idrott"
           }
         ],
         "error": ""
@@ -3464,6 +3504,11 @@
             "start": "17:00",
             "end": "19:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "22:00",
+            "description": "Idrott"
           }
         ],
         "error": ""
@@ -3799,6 +3844,11 @@
             "start": "17:00",
             "end": "19:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "22:00",
+            "description": "Idrott"
           }
         ],
         "error": ""
@@ -3823,6 +3873,11 @@
             "start": "09:30",
             "end": "12:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Idrott"
           }
         ],
         "error": ""
@@ -4119,6 +4174,11 @@
             "start": "17:00",
             "end": "19:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "22:00",
+            "description": "Idrott"
           }
         ],
         "error": ""
