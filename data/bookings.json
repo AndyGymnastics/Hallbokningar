@@ -1,56 +1,6 @@
 {
-  "generated": "2026-10-13T17:42:57.107Z",
+  "generated": "2026-10-13T22:20:36.951Z",
   "dates": {
-    "2026-09-13": {
-      "viahallen": {
-        "events": [],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "12:00",
-            "end": "13:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "13:00",
-            "end": "14:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "14:00",
-            "end": "15:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "15:30",
-            "end": "17:30",
-            "description": "Knatteskutt"
-          },
-          {
-            "start": "18:00",
-            "end": "19:00",
-            "description": "Innebandy"
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [
-          {
-            "start": "13:00",
-            "end": "15:00",
-            "description": "Barnkalas"
-          }
-        ],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [],
-        "error": ""
-      }
-    },
     "2026-09-14": {
       "viahallen": {
         "events": [
@@ -4212,6 +4162,76 @@
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
           }
         ],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2026-12-13": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "09:30",
+            "end": "11:30",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "11:30",
+            "end": "14:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "14:00",
+            "end": "17:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "18:00",
+            "end": "20:00",
+            "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "10:00",
+            "end": "12:00",
+            "description": "Nynäshamns Bågskytteklubb\n\nBågskytte"
+          },
+          {
+            "start": "12:00",
+            "end": "13:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "13:00",
+            "end": "14:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "14:00",
+            "end": "15:30",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "15:30",
+            "end": "17:30",
+            "description": "Knatteskutt"
+          },
+          {
+            "start": "18:00",
+            "end": "19:00",
+            "description": "Innebandy"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
         "error": ""
       },
       "kyrkis": {
