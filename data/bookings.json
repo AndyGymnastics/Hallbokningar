@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-21T06:21:07.560Z",
+  "generated": "2026-10-21T12:10:52.681Z",
   "dates": {
     "2026-09-21": {
       "viahallen": {
@@ -1364,7 +1364,7 @@
         "events": [
           {
             "start": "10:00",
-            "end": "12:00",
+            "end": "11:30",
             "description": "Gymnastik"
           }
         ],
@@ -1815,6 +1815,11 @@
             "start": "09:30",
             "end": "12:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "14:00",
+            "end": "15:00",
+            "description": "Nynäshamns IF Fotboll\n\nFotboll"
           }
         ],
         "error": ""
@@ -2164,6 +2169,11 @@
             "description": "Nynäshamns IF Fotboll\n\nFotboll"
           },
           {
+            "start": "14:00",
+            "end": "15:00",
+            "description": "Nynäshamns IF Fotboll\n\nFotboll"
+          },
+          {
             "start": "17:00",
             "end": "19:00",
             "description": "Idrott"
@@ -2454,7 +2464,7 @@
         "events": [
           {
             "start": "10:00",
-            "end": "12:00",
+            "end": "11:30",
             "description": "Gymnastik"
           },
           {
@@ -2522,6 +2532,11 @@
           {
             "start": "12:00",
             "end": "14:00",
+            "description": "Nynäshamns IF Fotboll\n\nFotboll"
+          },
+          {
+            "start": "14:00",
+            "end": "15:00",
             "description": "Nynäshamns IF Fotboll\n\nFotboll"
           }
         ],
@@ -2875,6 +2890,11 @@
             "start": "12:00",
             "end": "14:00",
             "description": "Nynäshamns IF Fotboll\n\nFotboll"
+          },
+          {
+            "start": "14:00",
+            "end": "15:00",
+            "description": "Nynäshamns IF Fotboll\n\nFotboll"
           }
         ],
         "error": ""
@@ -3215,6 +3235,11 @@
             "start": "12:00",
             "end": "14:00",
             "description": "Nynäshamns IF Fotboll\n\nFotboll"
+          },
+          {
+            "start": "14:00",
+            "end": "15:00",
+            "description": "Nynäshamns IF Fotboll\n\nFotboll"
           }
         ],
         "error": ""
@@ -3411,7 +3436,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:30",
+            "description": "Fotboll"
+          }
+        ],
         "error": ""
       }
     },
@@ -3497,7 +3528,7 @@
         "events": [
           {
             "start": "10:00",
-            "end": "12:00",
+            "end": "11:30",
             "description": "Gymnastik"
           },
           {
@@ -3559,6 +3590,11 @@
           {
             "start": "12:00",
             "end": "14:00",
+            "description": "Nynäshamns IF Fotboll\n\nFotboll"
+          },
+          {
+            "start": "14:00",
+            "end": "15:00",
             "description": "Nynäshamns IF Fotboll\n\nFotboll"
           },
           {
@@ -3756,7 +3792,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:30",
+            "description": "Fotboll"
+          }
+        ],
         "error": ""
       }
     },
@@ -3883,7 +3925,7 @@
         "events": [
           {
             "start": "10:00",
-            "end": "12:00",
+            "end": "11:30",
             "description": "Gymnastik"
           }
         ],
@@ -4092,7 +4134,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:30",
+            "description": "Fotboll"
+          }
+        ],
         "error": ""
       }
     },
@@ -4235,6 +4283,11 @@
           {
             "start": "12:00",
             "end": "14:00",
+            "description": "Nynäshamns IF Fotboll\n\nFotboll"
+          },
+          {
+            "start": "14:00",
+            "end": "15:00",
             "description": "Nynäshamns IF Fotboll\n\nFotboll"
           }
         ],
