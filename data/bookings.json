@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26T12:21:29.391Z",
+  "generated": "2026-10-26T18:47:59.201Z",
   "dates": {
     "2026-09-26": {
       "viahallen": {
@@ -1578,8 +1578,8 @@
             "description": "Övrig verksamhet"
           },
           {
-            "start": "18:00",
-            "end": "19:00",
+            "start": "19:30",
+            "end": "20:30",
             "description": "Friskvård"
           }
         ],
