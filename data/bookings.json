@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02T04:43:14.164Z",
+  "generated": "2026-11-02T13:08:51.078Z",
   "dates": {
     "2026-10-03": {
       "viahallen": {
@@ -1745,11 +1745,6 @@
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
           },
           {
-            "start": "15:30",
-            "end": "17:30",
-            "description": "Knatteskutt"
-          },
-          {
             "start": "18:00",
             "end": "19:00",
             "description": "Innebandy"
@@ -2112,11 +2107,6 @@
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
           },
           {
-            "start": "15:30",
-            "end": "17:30",
-            "description": "Knatteskutt"
-          },
-          {
             "start": "18:00",
             "end": "19:00",
             "description": "Innebandy"
@@ -2463,11 +2453,6 @@
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
           },
           {
-            "start": "15:30",
-            "end": "17:30",
-            "description": "Knatteskutt"
-          },
-          {
             "start": "18:00",
             "end": "19:00",
             "description": "Innebandy"
@@ -2806,11 +2791,6 @@
             "start": "14:00",
             "end": "15:30",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "15:30",
-            "end": "17:30",
-            "description": "Knatteskutt"
           },
           {
             "start": "18:00",
@@ -3169,11 +3149,6 @@
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
           },
           {
-            "start": "15:30",
-            "end": "17:30",
-            "description": "Knatteskutt"
-          },
-          {
             "start": "18:00",
             "end": "19:00",
             "description": "Innebandy"
@@ -3509,11 +3484,6 @@
             "start": "14:00",
             "end": "15:30",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "15:30",
-            "end": "17:30",
-            "description": "Knatteskutt"
           },
           {
             "start": "18:00",
