@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-04T06:52:00.063Z",
+  "generated": "2026-11-04T15:08:57.287Z",
   "dates": {
     "2026-10-05": {
       "viahallen": {
@@ -1337,16 +1337,6 @@
             "start": "17:00",
             "end": "18:00",
             "description": "Nynäshamns IF Fotboll\n\nFotboll"
-          },
-          {
-            "start": "18:00",
-            "end": "20:00",
-            "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
-          },
-          {
-            "start": "20:00",
-            "end": "21:00",
-            "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
           }
         ],
         "error": ""
