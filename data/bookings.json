@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06T03:31:31.416Z",
+  "generated": "2026-11-06T11:50:51.953Z",
   "dates": {
     "2026-10-07": {
       "viahallen": {
@@ -1924,7 +1924,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "13:00",
+            "end": "15:00",
+            "description": "Barnkalas"
+          }
+        ],
         "error": ""
       }
     },
