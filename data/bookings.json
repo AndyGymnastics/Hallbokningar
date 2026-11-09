@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T10:05:42.566Z",
+  "generated": "2026-11-09T20:57:06.859Z",
   "dates": {
     "2026-10-10": {
       "viahallen": {
@@ -1672,13 +1672,8 @@
           },
           {
             "start": "12:00",
-            "end": "14:00",
-            "description": "Nynäshamns IF Fotboll\n\nFotboll"
-          },
-          {
-            "start": "14:00",
-            "end": "15:00",
-            "description": "Nynäshamns IF Fotboll\n\nFotboll"
+            "end": "18:00",
+            "description": "Nynäshamns Basketbollklubb\n\nBasket"
           }
         ],
         "error": ""
@@ -2745,11 +2740,6 @@
             "start": "14:00",
             "end": "15:00",
             "description": "Nynäshamns IF Fotboll\n\nFotboll"
-          },
-          {
-            "start": "17:00",
-            "end": "19:00",
-            "description": "Idrott"
           }
         ],
         "error": ""
@@ -3021,6 +3011,11 @@
       },
       "svanis": {
         "events": [
+          {
+            "start": "16:30",
+            "end": "18:00",
+            "description": "Övrig verksamhet"
+          },
           {
             "start": "18:00",
             "end": "20:00",
