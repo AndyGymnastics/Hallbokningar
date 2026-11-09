@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T02:23:59.599Z",
+  "generated": "2026-11-09T10:05:42.566Z",
   "dates": {
     "2026-10-10": {
       "viahallen": {
@@ -2428,7 +2428,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "13:00",
+            "end": "15:00",
+            "description": "Barnkalas"
+          }
+        ],
         "error": ""
       }
     },
@@ -2779,6 +2785,11 @@
             "start": "10:00",
             "end": "11:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "14:30",
+            "end": "16:30",
+            "description": "Arrangemang"
           }
         ],
         "error": ""
@@ -3126,7 +3137,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "13:00",
+            "end": "16:00",
+            "description": "Arrangemang"
+          }
+        ],
         "error": ""
       }
     },
