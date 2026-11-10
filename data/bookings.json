@@ -1,63 +1,6 @@
 {
-  "generated": "2026-11-09T20:57:06.859Z",
+  "generated": "2026-11-10T03:19:07.259Z",
   "dates": {
-    "2026-10-10": {
-      "viahallen": {
-        "events": [
-          {
-            "start": "09:30",
-            "end": "12:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "10:00",
-            "end": "11:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "11:30",
-            "end": "12:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "12:30",
-            "end": "15:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "15:00",
-            "end": "18:00",
-            "description": "Barnkalas"
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [
-          {
-            "start": "10:00",
-            "end": "11:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [
-          {
-            "start": "12:30",
-            "end": "15:30",
-            "description": "Barnkalas"
-          }
-        ],
-        "error": ""
-      }
-    },
     "2026-10-11": {
       "viahallen": {
         "events": [
@@ -4417,6 +4360,62 @@
       },
       "tallbacka": {
         "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2027-01-09": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "09:30",
+            "end": "12:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "12:00",
+            "end": "14:00",
+            "description": "Nynäshamns IF Fotboll\n\nFotboll"
+          },
+          {
+            "start": "14:00",
+            "end": "15:00",
+            "description": "Nynäshamns IF Fotboll\n\nFotboll"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "10:00",
+            "end": "11:30",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "11:30",
+            "end": "12:30",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "12:30",
+            "end": "15:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [
+          {
+            "start": "10:00",
+            "end": "11:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
         "error": ""
       },
       "kyrkis": {
