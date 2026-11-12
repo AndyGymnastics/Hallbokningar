@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12T02:42:40.745Z",
+  "generated": "2026-11-12T10:41:47.475Z",
   "dates": {
     "2026-10-13": {
       "viahallen": {
@@ -1508,8 +1508,8 @@
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
           },
           {
-            "start": "12:00",
-            "end": "18:00",
+            "start": "13:00",
+            "end": "18:30",
             "description": "Nynäshamns Basketbollklubb\n\nBasket"
           }
         ],
@@ -1725,7 +1725,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:30",
+            "description": "Fotboll"
+          }
+        ],
         "error": ""
       }
     },
@@ -2071,7 +2077,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:30",
+            "description": "Fotboll"
+          }
+        ],
         "error": ""
       }
     },
