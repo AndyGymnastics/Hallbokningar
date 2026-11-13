@@ -1,30 +1,6 @@
 {
-  "generated": "2026-11-12T18:42:31.812Z",
+  "generated": "2026-11-12T23:58:29.879Z",
   "dates": {
-    "2026-10-13": {
-      "viahallen": {
-        "events": [],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "18:00",
-            "end": "20:00",
-            "description": "Nynäshamns Bågskytteklubb\n\nBågskytte"
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [],
-        "error": ""
-      }
-    },
     "2026-10-14": {
       "viahallen": {
         "events": [
@@ -4447,6 +4423,47 @@
       },
       "kyrkis": {
         "events": [],
+        "error": ""
+      }
+    },
+    "2027-01-12": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "18:00",
+            "end": "20:00",
+            "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
+          },
+          {
+            "start": "20:00",
+            "end": "21:00",
+            "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "18:00",
+            "end": "20:00",
+            "description": "Nynäshamns Bågskytteklubb\n\nBågskytte"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [
+          {
+            "start": "19:00",
+            "end": "20:30",
+            "description": "Fotboll"
+          }
+        ],
         "error": ""
       }
     }
