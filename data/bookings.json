@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T06:22:25.340Z",
+  "generated": "2026-11-13T14:48:07.491Z",
   "dates": {
     "2026-10-14": {
       "viahallen": {
@@ -1882,11 +1882,6 @@
             "start": "12:30",
             "end": "15:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "15:00",
-            "end": "17:30",
-            "description": "Barnkalas"
           }
         ],
         "error": ""
@@ -2947,6 +2942,11 @@
             "start": "12:30",
             "end": "15:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "15:00",
+            "end": "18:00",
+            "description": "Barnkalas"
           }
         ],
         "error": ""
