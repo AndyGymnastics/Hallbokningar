@@ -1,47 +1,6 @@
 {
-  "generated": "2026-11-13T21:12:41.026Z",
+  "generated": "2026-11-14T01:35:24.597Z",
   "dates": {
-    "2026-10-14": {
-      "viahallen": {
-        "events": [
-          {
-            "start": "17:00",
-            "end": "19:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          }
-        ],
-        "error": ""
-      },
-      "svanis": {
-        "events": [
-          {
-            "start": "17:00",
-            "end": "19:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "19:00",
-            "end": "20:00",
-            "description": "Innebandy"
-          }
-        ],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [
-          {
-            "start": "18:00",
-            "end": "20:00",
-            "description": "Ösmo Taekwondo Klubb\n\nTae Kwon Do"
-          }
-        ],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [],
-        "error": ""
-      }
-    },
     "2026-10-15": {
       "viahallen": {
         "events": [
@@ -4464,6 +4423,52 @@
             "description": "Fotboll"
           }
         ],
+        "error": ""
+      }
+    },
+    "2027-01-13": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "20:30",
+            "description": "Ösmo Nynäs Friidrottsklubb\n\nFriidrott"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "19:00",
+            "end": "20:00",
+            "description": "Innebandy"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [
+          {
+            "start": "18:00",
+            "end": "20:00",
+            "description": "Ösmo Taekwondo Klubb\n\nTae Kwon Do"
+          }
+        ],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
         "error": ""
       }
     }
