@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16T07:03:17.818Z",
+  "generated": "2026-11-16T17:17:22.927Z",
   "dates": {
     "2026-10-17": {
       "viahallen": {
@@ -2587,7 +2587,7 @@
           },
           {
             "start": "19:00",
-            "end": "20:00",
+            "end": "19:30",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
           }
         ],
@@ -2840,6 +2840,11 @@
             "start": "10:00",
             "end": "11:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          },
+          {
+            "start": "13:00",
+            "end": "17:00",
+            "description": "Barnkalas"
           }
         ],
         "error": ""
@@ -3278,11 +3283,6 @@
             "start": "17:00",
             "end": "19:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "19:00",
-            "end": "20:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
           }
         ],
         "error": ""
@@ -3618,11 +3618,6 @@
             "start": "17:00",
             "end": "19:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "19:00",
-            "end": "20:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
           }
         ],
         "error": ""
@@ -3945,11 +3940,6 @@
           {
             "start": "17:00",
             "end": "19:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "19:00",
-            "end": "20:00",
             "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
           }
         ],
