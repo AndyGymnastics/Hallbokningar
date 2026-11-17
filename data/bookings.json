@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-17T08:56:20.295Z",
+  "generated": "2026-11-17T18:17:33.442Z",
   "dates": {
     "2026-10-18": {
       "viahallen": {
@@ -1570,6 +1570,11 @@
             "start": "19:00",
             "end": "20:00",
             "description": "Innebandy"
+          },
+          {
+            "start": "20:00",
+            "end": "21:00",
+            "description": "Innebandy"
           }
         ],
         "error": ""
@@ -2660,13 +2665,8 @@
         "events": [
           {
             "start": "17:00",
-            "end": "19:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "19:00",
-            "end": "21:30",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+            "end": "22:00",
+            "description": "Skolverksamhet"
           }
         ],
         "error": ""
