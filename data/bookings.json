@@ -1,41 +1,6 @@
 {
-  "generated": "2026-11-22T18:14:48.801Z",
+  "generated": "2026-11-22T23:44:01.847Z",
   "dates": {
-    "2026-10-23": {
-      "viahallen": {
-        "events": [
-          {
-            "start": "17:00",
-            "end": "19:00",
-            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
-          },
-          {
-            "start": "19:00",
-            "end": "22:00",
-            "description": "Idrott"
-          }
-        ],
-        "error": ""
-      },
-      "svanis": {
-        "events": [],
-        "error": ""
-      },
-      "tallbacka": {
-        "events": [
-          {
-            "start": "17:00",
-            "end": "20:00",
-            "description": "Barnkalas"
-          }
-        ],
-        "error": ""
-      },
-      "kyrkis": {
-        "events": [],
-        "error": ""
-      }
-    },
     "2026-10-24": {
       "viahallen": {
         "events": [],
@@ -4480,6 +4445,36 @@
             "description": "Nynäshamns IF Fotboll\n\nFotboll"
           }
         ],
+        "error": ""
+      },
+      "kyrkis": {
+        "events": [],
+        "error": ""
+      }
+    },
+    "2027-01-22": {
+      "viahallen": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "svanis": {
+        "events": [
+          {
+            "start": "17:00",
+            "end": "19:00",
+            "description": "Nynäshamns Gymnastikförening\n\nGymnastik"
+          }
+        ],
+        "error": ""
+      },
+      "tallbacka": {
+        "events": [],
         "error": ""
       },
       "kyrkis": {
