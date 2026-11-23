@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-23T06:00:23.654Z",
+  "generated": "2026-11-23T18:36:22.768Z",
   "dates": {
     "2026-10-24": {
       "viahallen": {
@@ -2465,7 +2465,13 @@
         "error": ""
       },
       "svanis": {
-        "events": [],
+        "events": [
+          {
+            "start": "17:30",
+            "end": "20:00",
+            "description": "Barnkalas"
+          }
+        ],
         "error": ""
       },
       "tallbacka": {
@@ -3944,7 +3950,13 @@
         "error": ""
       },
       "kyrkis": {
-        "events": [],
+        "events": [
+          {
+            "start": "09:30",
+            "end": "16:00",
+            "description": "Fotboll"
+          }
+        ],
         "error": ""
       }
     },
